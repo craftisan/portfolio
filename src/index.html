@@ -7,16 +7,118 @@
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div id="fullpage">
-    <div class="section active" id="section0"><h1>Happy now?</h1></div>
-    <div class="section" id="section1">
-        <div class="slide "><h1>Simple Demo</h1></div>
-        <div class="slide active"><h1>Only text</h1></div>
-        <div class="slide"><h1>And text</h1></div>
-        <div class="slide"><h1>And more text</h1></div>
+<div class="fixed bg-black inset-x-0 top-0 z-50 h-20">
+    99680 64066
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex justify-between items-center py-6 md:justify-center">
+            <nav class="flex space-x-10" id="menu">
+                <a class="text-base font-medium text-white hover:text-neutral-400 active" data-menuanchor="intro"
+                   href="#intro">D.J.</a>
+                <a class="text-base font-medium text-white hover:text-neutral-400" data-menuanchor="about"
+                   href="#about">about me</a>
+                <a class="text-base font-medium text-white hover:text-neutral-400" data-menuanchor="contact"
+                   href="#contact">contact me</a>
+            </nav>
+        </div>
     </div>
-    <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
-    <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+</div>
+
+<div id="homepage">
+    <div class="section active" data-drop="down" data-anchor="intro" data-tooltip="intro" id="section1">
+        <div class="grid grid-rows-6 gap-4 md:gap-10 h-full p-4 md:p-10 place-items-center">
+            <div class="row-span-5 grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-4 md:gap-10 items-center max-h-full">
+                <p class="justify-self-center md:justify-self-end text-center md:text-right">
+                    <span class="text-2xl md:text-3xl">Hi.</span><br>
+                    <span class="text-4xl md:text-5xl">I'm Deekshant</span><br>
+                    <span class="text-sm md:text-base">(aka DJ)</span><br>
+                    <br>
+                    <span class="text-base md:text-lg">I'm here to<br>
+                    walk you through my
+                </span><br>
+                    <span class="text-xl md:text-2xl">portfolio.</span><br>
+                    <br>
+                    <span class="text-xl md:text-2xl font-bold">TL;DR?</span><br>
+                    <a class="inline-block px-4 py-2 mt-2 text-base md:text-lg text-white bg-black rounded-md hover:text-black hover:bg-white hover:ring-2 hover:ring-inset hover:ring-black duration-200 ease-in"
+                       href="#contact">
+                        Let's Connect
+                    </a>
+                </p>
+                <img alt="Deekshant"
+                     class="object-cover justify-self-center md:justify-self-start order-first md:order-last max-h-full"
+                     data-src="images/Profile-1.jpg">
+            </div>
+            <a class="flex flex-col items-center" href="#about">
+                scroll down
+                <svg class="h-6 w-6 animate-bounce mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <!-- Section 2 -->
+    <div class="section" data-anchor="about" data-tooltip="about me" id="section2">
+        <div class="slide">
+            <div class="grid grid-rows-6 gap-4 md:gap-10 h-full p-4 md:p-10 items-center bg-black text-white">
+                <div class="row-start-2 row-span-4 grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-4 md:gap-10 items-center max-h-full">
+                    <img alt="Deekshant" class="object-cover justify-self-center md:justify-self-end max-h-full"
+                         data-src="images/Profile-2-black.jpg">
+                    <p class="justify-self-center md:justify-self-start text-center md:text-left">
+                        <span class="text-lg md:text-xl">I'm a</span><br>
+                        <span class="text-4xl md:text-5xl">full stack</span><br>
+                        <span class="text-xl md:text-2xl">software engineer</span><br>
+                        <br>
+                        <span class="text-lg md:text-xl">& a promising</span><br>
+                        <span class="text-3xl md:text-4xl">technical architect</span><br>
+                        <span class="text-base md:text-lg">with a knack to build<br>
+                            creative products & solutions<br>
+                            to simplify day-to-day life
+                        </span>
+                    </p>
+                </div>
+                <!--                <div class="text-center">-->
+                <!--                    <div class="text-base">see more of my geek side</div>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- Section 3 -->
+    <div class="section" data-anchor="contact" data-tooltip="contact me" id="section3">
+        <div class="grid grid-rows-6 gap-4 md:gap-10 h-full p-4 md:p-10 place-items-center">
+            <div class="row-span-5 max-h-full flex flex-col items-center">
+                <svg class="h-20 w-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2"/>
+                </svg>
+                <a class="text-lg md:text-4xl flex items-center group" href="mailto:contact@deekshantjoshi.com">
+                    <svg class="h-7 w-7 md:h-14 md:w-14 group-hover:-translate-x-4 duration-200 ease-in" fill="none"
+                         stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                    </svg>
+                    <span class="group-hover:animate-pulse">contact@deekshantjoshi.com</span>
+                    <svg class="h-7 w-7 md:h-14 md:w-14 group-hover:translate-x-4 duration-200 ease-in" fill="none"
+                         stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+            <a class="group flex flex-col items-center" href="#intro">
+                <svg class="h-4 w-4 md:h-8 md:w-8 group-hover:-translate-y-2 group-hover:animate-pulse delay-300 duration-200 ease-in"
+                     fill="none"
+                     stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2"/>
+                </svg>
+                <span class="opacity-0 group-hover:opacity-100 delay-200 duration-500 ease-in">still not convinced?</span>
+                <span class="opacity-0 group-hover:opacity-100 delay-200 duration-500 ease-in">start over!</span>
+            </a>
+        </div>
+    </div>
 </div>
 <script src="js/index.js" type="text/javascript"></script>
 </body>

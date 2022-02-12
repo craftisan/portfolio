@@ -28,6 +28,10 @@ module.exports = {
                     context: path.resolve(__dirname, "src"),
                     from: "*.html",
                 },
+                {
+                    context: path.resolve(__dirname, "src"),
+                    from: "images/**/*",
+                },
             ],
         }),
     ],
@@ -36,9 +40,11 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
+                include: path.resolve(__dirname, 'src'),
                 use: [
                     MiniCssExtractPlugin.loader,
                     {loader: "css-loader", options: {sourceMap: true}},
+                    {loader: 'postcss-loader'}
                 ],
             },
             {
