@@ -8,7 +8,7 @@ import FullPage from "fullpage.js";
 new FullPage('#homepage', {
     scrollingSpeed: 1000,
     autoScrolling: true,
-    scrollHorizontally: true,
+    scrollHorizontally: false,
     navigation: true,
     navigationPosition: 'right',
     showActiveTooltip: false,
