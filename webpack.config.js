@@ -81,11 +81,12 @@ module.exports = {
         compress: true,
         hot: true,
         liveReload: true, // reloads webpage when changes are detected
-        // host: '0.0.0.0',
-        port: 9000,
+        host: 'portfolio.local',
+        port: 7000,
+        allowedHosts: 'all',
         open: true,
-        https: true,
-        server: 'https',
+        https: false,
+        server: 'http',
         headers: {
             'X-Custom-Foo': 'bar',
         },

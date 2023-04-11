@@ -1,21 +1,20 @@
 // Import CSS. This will be seperated by webpack
 import "../css/index.css";
 
-// Import fullpage
-import FullPage from "fullpage.js";
+// Import required modules
+import $ from 'jquery';
+import SplitType from 'split-type';
+import { gsap } from "gsap";
 
-// Initialize fullpage
-new FullPage('#homepage', {
-    scrollingSpeed: 1000,
-    autoScrolling: true,
-    scrollHorizontally: false,
-    navigation: true,
-    navigationPosition: 'right',
-    showActiveTooltip: false,
-    slidesNavigation: true,
-    slidesNavPosition: 'bottom',
-    paddingTop: '5rem',
-    controlArrows: true,
-    menu: '#menu',
-    lazyLoad: true,
+$(document).ready(function () {
+    let text = new SplitType('#name-split-text');
+    let characters = $('.char');
+    characters.addClass('translate-y-full');
+
+    gsap.to('.char', {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.02,
+        duration: 0.5
+    });
 });
